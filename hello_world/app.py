@@ -235,6 +235,11 @@ CHECK_LIST = [
         'company': '京成電鉄',
         'website': 'http://www.keisei.co.jp/info/index.htm'
     },
+    {
+        'name': 'つくばエクスプレス線',
+        'company': 'つくばエクスプレス',
+        'website': 'http://www.mir.co.jp/info/'
+    },
 ]
 
 JSON_ADDR = 'https://rti-giken.jp/fhc/api/train_tetsudo/delay.json'

@@ -21,7 +21,7 @@ CHECK_LIST = [
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
     {
-        'name': '東海道線	',
+        'name': '東海道線',
         'company': 'JR東日本',
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
@@ -51,7 +51,7 @@ CHECK_LIST = [
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
     {
-        'name': '中央･総武各駅停車	',
+        'name': '中央･総武各駅停車',
         'company': 'JR東日本',
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
@@ -61,12 +61,12 @@ CHECK_LIST = [
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
     {
-        'name': '中央本線	',
+        'name': '中央本線',
         'company': 'JR東日本',
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
     {
-        'name': '総武本線	',
+        'name': '総武本線',
         'company': 'JR東日本',
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
@@ -76,12 +76,12 @@ CHECK_LIST = [
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
     {
-        'name': '五日市線	',
+        'name': '五日市線',
         'company': 'JR東日本',
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
     {
-        'name': '宇都宮線	',
+        'name': '宇都宮線',
         'company': 'JR東日本',
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
@@ -111,7 +111,7 @@ CHECK_LIST = [
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
     {
-        'name': '武蔵野線	',
+        'name': '武蔵野線',
         'company': 'JR東日本',
         'website': 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
     },
@@ -126,7 +126,7 @@ CHECK_LIST = [
         'website': 'https://www.tokyometro.jp/unkou/history/ginza.html'
     },
     {
-        'name': '丸ノ内線	',
+        'name': '丸ノ内線',
         'company': '東京メトロ',
         'website': 'https://www.tokyometro.jp/unkou/history/marunouchi.html'
     },
@@ -141,7 +141,7 @@ CHECK_LIST = [
         'website': 'https://www.tokyometro.jp/unkou/history/touzai.html'
     },
     {
-        'name': '千代田線	',
+        'name': '千代田線',
         'company': '東京メトロ',
         'website': 'https://www.tokyometro.jp/unkou/history/chiyoda.html'
     },
@@ -151,7 +151,7 @@ CHECK_LIST = [
         'website': 'https://www.tokyometro.jp/unkou/history/yurakucho.html'
     },
     {
-        'name': '半蔵門線	',
+        'name': '半蔵門線',
         'company': '東京メトロ',
         'website': 'https://www.tokyometro.jp/unkou/history/hanzoumon.html'
     },
@@ -191,7 +191,7 @@ CHECK_LIST = [
         'website': 'https://www.kotsu.metro.tokyo.jp/subway/schedule/'
     },
     {
-        'name': '大江戸線	',
+        'name': '大江戸線',
         'company': '都営地下鉄',
         'website': 'https://www.kotsu.metro.tokyo.jp/subway/schedule/'
     },

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BUCKET_NAME="gnk263-lambda-bucket"
+BUCKET_NAME="cm-fujii.genki-deploy"
 
 sam package \
     --output-template-file packaged.yaml \

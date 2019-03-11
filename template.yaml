@@ -13,11 +13,11 @@ Parameters:
 
 Resources:
 
-  HelloWorldFunction:
+  NotifyPeriodicFunction:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: hello_world/
-      Handler: app.lambda_handler
+      Handler: periodic.lambda_handler
       Runtime: python3.6
       Environment:
         Variables:
@@ -28,13 +28,22 @@ Resources:
           Type: Schedule
           Properties:
             Schedule: cron(0 23 * * ? *) # 日本時間AM8時に毎日通知する
+  NotifySlashCommandFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello_world/
+      Handler: slash_command.lambda_handler
+      Runtime: python3.6
+      Events:
+        SlashCommand:
+          Type: Api
+          Properties:
+            Path: /train/notification
+            Method: POST
+
 
 Outputs:
 
-  HelloWorldFunction:
-    Description: "Hello World Lambda Function ARN"
-    Value: !GetAtt HelloWorldFunction.Arn
-
-  HelloWorldFunctionIamRole:
-    Description: "Implicit IAM Role created for Hello World function"
-    Value: !GetAtt HelloWorldFunctionRole.Arn
+  SlashCommandApi:
+    Description: "Slash command API"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/train/notification"

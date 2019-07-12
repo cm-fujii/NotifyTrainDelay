@@ -19,6 +19,8 @@
   * AM 8:41
   * AM 8:51
 
+情報更新のラグを考慮して、意図的に1分遅れにしています。
+
 ## 通知対象の路線
 
 * [hello_world/target.json](https://github.com/cm-fujii/NotifyTrainDelay/blob/master/hello_world/target.json)

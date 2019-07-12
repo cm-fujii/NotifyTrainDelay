@@ -14,11 +14,15 @@ Resources:
       CodeUri: hello_world/
       Handler: periodic.lambda_handler
       Runtime: python3.6
+      Policies:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess
       Events:
         NotifySlack:
           Type: Schedule
           Properties:
             Schedule: cron(1/10 23 * * ? *) # 日本時間AM8時1分から10分毎に毎日通知する
+
   NotifySlashCommandFunction:
     Type: AWS::Serverless::Function
     Properties:

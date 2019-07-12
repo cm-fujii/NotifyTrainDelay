@@ -1,10 +1,11 @@
 import os
 import json
+import boto3
 import requests
 
 from common_lambda import get_notify_delays, get_message
 
-SLACK_WEBHOOK_URL = os.environ['SLACK_WEBHOOK_URL']
+ssm = boto3.client('ssm')
 
 
 def lambda_handler(event, context) -> None:
@@ -47,8 +48,17 @@ def post_slack(title, detail) -> None:
 
     # http://requests-docs-ja.readthedocs.io/en/latest/user/quickstart/
     try:
-        response = requests.post(SLACK_WEBHOOK_URL, data=json.dumps(payload))
+        response = requests.post(get_notify_url(), data=json.dumps(payload))
     except requests.exceptions.RequestException as e:
         print(e)
     else:
         print(response.status_code)
+
+
+def get_notify_url() -> str:
+    # https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter
+    response = ssm.get_parameter(
+        Name='NotifyTrainDelayToSlack-WebhookURL',
+        WithDecryption=True
+    )
+    return response['Parameter']['Value']

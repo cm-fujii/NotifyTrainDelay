@@ -1,5 +1,5 @@
 BUCKET_NAME := cm-fujii.genki-deploy
-WEBHOOK_URL := https://hoge
+
 
 build:
 	sam build
@@ -12,5 +12,4 @@ deploy:
 	sam deploy \
 		--template-file packaged.yaml \
 		--stack-name NotifyTrainDelayToSlack \
-		--capabilities CAPABILITY_IAM \
-		--parameter-overrides SlackWebhookUrl=$(WEBHOOK_URL)
+		--capabilities CAPABILITY_IAM

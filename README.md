@@ -8,7 +8,7 @@
 
 * [電車の運行情報（遅延・運転見合・運休など）を毎朝Slackに通知してみた | Developers.IO](https://dev.classmethod.jp/cloud/aws/notify-slack-train-delay/)
 * [Slackで「今の電車の運行情報」を自分だけに教えてくれるSlash commandsを作った | Developers.IO](https://dev.classmethod.jp/cloud/aws/slash-commands-train-delay/)
-* [パラメータストアを活用して Lambda で機密情報 (SecureString) を扱う with AWS SAM](https://dev.classmethod.jp/cloud/aws/secure-string-with-lambda-using-parameter-store/)
+* [パラメータストアを活用して Lambda で機密情報 (SecureString) を扱う with AWS SAM | Developers.IO](https://dev.classmethod.jp/cloud/aws/secure-string-with-lambda-using-parameter-store/)
 
 ## 通知タイミング
 

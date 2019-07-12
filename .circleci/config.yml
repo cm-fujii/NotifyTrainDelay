@@ -1,0 +1,33 @@
+version: 2.1
+executors:
+  my-executor:
+    docker:
+      - image: circleci/python:3.6.5
+    working_directory: ~/NotifyTrainDelay
+jobs:
+  build:
+    executor: my-executor
+    steps:
+      - checkout
+      - run:
+          name: sam-build
+          command: make build
+  deploy:
+    executor: my-executor
+    steps:
+      - checkout
+      - run:
+          name: sam-deploy
+          command: make deploy
+workflows:
+  version: 2.1
+  deploy-workflow:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+      - deploy:
+          requires:
+            - build

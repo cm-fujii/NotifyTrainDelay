@@ -1,7 +1,7 @@
 import json
 import requests
 
-JSON_ADDR = 'https://rti-giken.jp/fhc/api/train_tetsudo/delay.json'
+JSON_ADDR = 'https://tetsudo.rti-giken.jp/free/delay.json'
 
 
 def get_notify_delays() -> list:

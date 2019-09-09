@@ -63,9 +63,9 @@ def get_message(delays) -> tuple:
         str: メッセージの詳細（遅延情報）
     """
     if not delays:
-        return "電車の遅延はありません。", ""
+        return "電車の運行情報（遅延・運休など）はありません。", ""
 
-    title = "電車の遅延があります。"
+    title = "電車の運行情報（遅延・運休など）があります。"
 
     details = []
 
